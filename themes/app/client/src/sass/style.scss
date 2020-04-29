@@ -1,0 +1,12 @@
+@import "includes/variables";
+@import "bootstrap/scss/bootstrap";
+
+// Styles that's throughout all the screensizes
+@import "includes/global";
+
+// On specific screensizes
+@import "includes/desktop";
+@import "includes/tablet";
+@import "includes/mobile";
+
+@import "includes/login-form-fix";

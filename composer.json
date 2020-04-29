@@ -1,0 +1,38 @@
+{
+    "name": "jinjie/silverstripe-starter",
+    "type": "project",
+    "description": "Silverstripe Starter Pack",
+    "require": {
+        "php": ">=7.1.0",
+        "silverstripe/recipe-plugin": "^1.2",
+        "silverstripe/recipe-cms": "^4.5",
+        "jinjie/silverstripe-bootstrap-forms": "^1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.7"
+    },
+    "extra": {
+        "resources-dir": "_resources",
+        "project-files-installed": [
+            "app/.htaccess",
+            "app/_config.php",
+            "app/_config/mysite.yml",
+            "app/src/Page.php",
+            "app/src/PageController.php"
+        ],
+        "public-files-installed": [
+            ".htaccess",
+            "index.php",
+            "web.config"
+        ],
+        "expose": [
+            "themes/app/client/dist",
+            "themes/app/client/images"
+        ]
+    },
+    "config": {
+        "process-timeout": 600
+    },
+    "prefer-stable": true,
+    "minimum-stability": "dev"
+}

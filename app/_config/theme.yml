@@ -1,0 +1,9 @@
+---
+Name: mytheme
+---
+SilverStripe\View\SSViewer:
+  themes:
+    - '$public'
+    - 'app'
+    - 'silverstripe-bootstrap-forms'
+    - '$default'
