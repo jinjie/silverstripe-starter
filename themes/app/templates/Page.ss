@@ -8,7 +8,7 @@
     <% require css(themes/app/client/dist/css/style.css) %>
     <% require javascript(themes/app/client/dist/js/script.js) %>
 </head>
-<body>
+<body class="{$ClassName.ShortName}<% if $ID %> {$ClassName.ShortName}-{$ID}<% end_if %> {$URLSegment}">
     <% include Header %>
 
     {$Layout}
