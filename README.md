@@ -5,9 +5,11 @@ My standard pack to start a new Silverstripe website.
 ## How to start
 
 ```sh
-composer create-project jinjie/silverstripe-starter <app folder>
+composer create-project jinjie/silverstripe-starter myproject
+cd myproject
 yarn
-composer install
+
+# Copy .env.example to .env and edit the file before running this
 vendor/bin/sake dev/build
 ```
 
