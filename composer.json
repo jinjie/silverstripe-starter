@@ -5,7 +5,7 @@
     "require": {
         "php": ">=7.1.0",
         "silverstripe/recipe-plugin": "^1.2",
-        "silverstripe/recipe-cms": "^4.5",
+        "silverstripe/recipe-cms": "^4.6",
         "jinjie/silverstripe-bootstrap-forms": "^1.0"
     },
     "require-dev": {
@@ -16,6 +16,7 @@
         "project-files-installed": [
             "app/.htaccess",
             "app/_config.php",
+            "app/_config/mimevalidator.yml",
             "app/_config/mysite.yml",
             "app/src/Page.php",
             "app/src/PageController.php"
