@@ -1,0 +1,14 @@
+---
+name: app-google-analytics
+---
+# # Comment out to enable Google Analytics
+# # See https://github.com/fractaslabs/silverstripe-googleanalytics
+# Fractas\GoogleAnalytics\GoogleAnalyticsController:
+#   enable_display_features: true # https://developers.google.com/analytics/devguides/collection/analyticsjs/display-features
+#   enable_in_dev: false
+#   ga_id: UA-xxxxxxxx-x0 #main Google Analytics ID property
+#   gtm_id: GTM-xxxxxxxx #Google Tag Manager ID
+#   ga_extra_ids:
+#     newTracker1: UA-xxxxxxxx-x1 #you can add multiple Google Analytics ID properties
+#     newTracker2: UA-xxxxxxxx-x2
+#     newTrackerX: UA-xxxxxxxx-xX
