@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c69aa5339b8dec5aa4d0568ce7207b85",
+    "content-hash": "c0a56a1de7000d8fca6bb71d1119842f",
     "packages": [
         {
             "name": "bramus/ansi-php",
@@ -324,6 +324,53 @@
                 "twitter cards"
             ],
             "time": "2020-07-03T15:04:01+00:00"
+        },
+        {
+            "name": "fractas/googleanalytics",
+            "version": "3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fractaslabs/silverstripe-googleanalytics.git",
+                "reference": "f4835846128d918b740ae576473c29d780889069"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fractaslabs/silverstripe-googleanalytics/zipball/f4835846128d918b740ae576473c29d780889069",
+                "reference": "f4835846128d918b740ae576473c29d780889069",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/framework": "~4"
+            },
+            "type": "silverstripe-vendormodule",
+            "extra": {
+                "installer-name": "googleanalytics"
+            },
+            "autoload": {
+                "psr-4": {
+                    "Fractas\\GoogleAnalytics\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Milan Jelicanin",
+                    "email": "milan.jelicanin@fractas.com"
+                }
+            ],
+            "description": "Fast, configurable and simple Google Analytics module with support for multiple GA ID's",
+            "homepage": "https://github.com/fractaslabs/silverstripe-googleanalytics",
+            "keywords": [
+                "analytics",
+                "cms",
+                "google",
+                "google analytics",
+                "silverstripe"
+            ],
+            "time": "2019-02-01T11:46:21+00:00"
         },
         {
             "name": "guzzlehttp/psr7",
@@ -3352,6 +3399,7 @@
             "keywords": [
                 "tokenizer"
             ],
+            "abandoned": true,
             "time": "2017-11-27T05:48:46+00:00"
         },
         {
