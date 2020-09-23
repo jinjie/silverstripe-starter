@@ -1,6 +1,12 @@
 <header>
     <div class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a href="{$BaseHref}" class="navbar-brand">Starter</a>
+        <a href="{$BaseHref}" class="navbar-brand">
+            <% if $SiteConfig.Logo %>
+                {$SiteConfig.Logo.ScaleHeight(40)}
+            <% else %>
+                {$SiteConfig.Title}
+            <% end_if %>
+        </a>
 
         <button
             class="navbar-toggler"
