@@ -3,6 +3,8 @@
 <head>
     <% base_tag %>
     {$MetaTags(false)}
+
+    <title>{$Title} - {$SiteConfig.Title}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <% require css(themes/app/client/dist/css/style.css) %>
