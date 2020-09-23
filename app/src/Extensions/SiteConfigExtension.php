@@ -12,7 +12,11 @@ namespace SwiftDevLabs\Extensions;
 use SilverStripe\AssetAdmin\Forms\UploadField;
 use SilverStripe\Assets\Image;
 use SilverStripe\Forms\FieldList;
+use SilverStripe\Forms\GridField\GridField;
+use SilverStripe\Forms\GridField\GridFieldConfig_RecordEditor;
 use SilverStripe\ORM\DataExtension;
+use SwiftDevLabs\Models\SocialMediaLink;
+use Symbiote\GridFieldExtensions\GridFieldOrderableRows;
 
 class SiteConfigExtension extends DataExtension
 {
@@ -26,6 +30,10 @@ class SiteConfigExtension extends DataExtension
         'AlternateLogo',
     ];
 
+    private static $has_many = [
+        'SocialMediaLinks' => SocialMediaLink::class,
+    ];
+
     public function updateCMSFields(FieldList $fields)
     {
         $fields->addFieldsToTab(
@@ -37,6 +45,13 @@ class SiteConfigExtension extends DataExtension
                 UploadField::create(
                     'AlternateLogo'
                 ),
+                GridField::create(
+                    'SocialMediaLinks',
+                    'Social Media Links',
+                    $this->owner->SocialMediaLinks(),
+                    GridFieldConfig_RecordEditor::create()
+                        ->addComponent(new GridFieldOrderableRows())
+                )
             ]
         );
     }
