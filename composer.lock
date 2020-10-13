@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a6ae792a662f8bad3b6cacdb58093022",
+    "content-hash": "cfc5cff3290a3645a251e78d065c7a51",
     "packages": [
         {
             "name": "bramus/ansi-php",
@@ -512,6 +512,49 @@
                 "watermark"
             ],
             "time": "2019-11-02T09:15:47+00:00"
+        },
+        {
+            "name": "jinjie/silverstripe-admin-material-icons",
+            "version": "0.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jinjie/silverstripe-admin-material-icons.git",
+                "reference": "78dd3c3fa8e11aca479640058a4e5e00f04d278d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jinjie/silverstripe-admin-material-icons/zipball/78dd3c3fa8e11aca479640058a4e5e00f04d278d",
+                "reference": "78dd3c3fa8e11aca479640058a4e5e00f04d278d",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/admin": "^1",
+                "silverstripe/framework": "^4"
+            },
+            "type": "silverstripe-vendormodule",
+            "extra": {
+                "expose": [
+                    "client/dist"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Kong Jin Jie",
+                    "email": "jinjie@swiftdev.sg"
+                }
+            ],
+            "description": "Material Design Icons on Silverstripe 4 admin",
+            "homepage": "https://github.com/jinjie/silverstripe-admin-material-icons",
+            "keywords": [
+                "material design icons",
+                "silverstripe",
+                "silverstripe-admin"
+            ],
+            "time": "2020-10-13T15:41:22+00:00"
         },
         {
             "name": "jinjie/silverstripe-bootstrap-forms",
@@ -4228,5 +4271,6 @@
     "platform": {
         "php": ">=7.1.0"
     },
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
 }
