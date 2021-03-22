@@ -45,7 +45,7 @@ gulp.task('browserify', function(cb) {
     cb();
 });
 
-gulp.task('watch', function(cb) {
+gulp.task('browser-sync', function(cb) {
     browserSync.init({
         proxy: PROXY_URL,
         files: [
@@ -68,3 +68,4 @@ gulp.task('fontawesome', function(cb) {
 });
 
 gulp.task('default', gulp.series('sass', 'fontawesome', 'browserify'));
+gulp.task('watch', gulp.series('default', 'browser-sync'));
