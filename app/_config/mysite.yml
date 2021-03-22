@@ -8,6 +8,10 @@ SilverStripe\SiteConfig\SiteConfig:
   extensions:
     - SwiftDevLabs\Extensions\SiteConfigExtension
 
+Page:
+  extensions:
+    - DNADesign\Elemental\Extensions\ElementalPageExtension
+
 ---
 Name: my-project-assetsflysystem
 After: '#assetsflysystem'

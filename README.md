@@ -13,6 +13,13 @@ yarn
 vendor/bin/sake dev/build
 ```
 
+## Silverstripe Elemental
+
+When building for the first time, run `DNADesign-Elemental-Tasks-MigrateContentToElement` task to migrate content to
+Elemental
+
+
+
 ## Start developing
 
 1. Edit [gulpfile.js](gulpfile.js) and change the address of the website
