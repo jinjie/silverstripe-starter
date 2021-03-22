@@ -11,6 +11,7 @@
     "gulp-sass": "^4",
     "gulp-sourcemaps": "^2.6",
     "jquery": "3.4.1",
+    "node-notifier": "^9.0.1",
     "popper.js": "^1.16"
   }
 }
