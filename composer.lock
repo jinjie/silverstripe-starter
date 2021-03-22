@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8d6859d53a71699f32f0048c7156c720",
+    "content-hash": "c1b37997ec570b31d023c280c34c3932",
     "packages": [
         {
             "name": "bramus/ansi-php",
@@ -681,6 +681,96 @@
             ],
             "description": "Silverstripe theme to make forms compatible with Bootstrap 4",
             "time": "2020-12-23T03:26:54+00:00"
+        },
+        {
+            "name": "jinjie/slickhero",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jinjie/slickhero.git",
+                "reference": "700ab83946c35ed044078f8db3e63caca696140e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jinjie/slickhero/zipball/700ab83946c35ed044078f8db3e63caca696140e",
+                "reference": "700ab83946c35ed044078f8db3e63caca696140e",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/cms": "^4",
+                "symbiote/silverstripe-gridfieldextensions": "^3.2"
+            },
+            "type": "silverstripe-vendormodule",
+            "extra": {
+                "expose": [
+                    "client"
+                ]
+            },
+            "autoload": {
+                "psr-4": {
+                    "SwiftDevLabs\\SlickHero\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kong Jin Jie",
+                    "email": "jinjie@swiftdev.sg"
+                }
+            ],
+            "description": "Add hero banners powered by slickjs",
+            "keywords": [
+                "hero",
+                "silverstripe",
+                "slickjs"
+            ],
+            "time": "2020-04-30T07:10:06+00:00"
+        },
+        {
+            "name": "jinjie/slickhero-elemental",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jinjie/slickhero-elemental.git",
+                "reference": "cf514db5c2cc490d5fd51e9787e3babf214d4ab4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jinjie/slickhero-elemental/zipball/cf514db5c2cc490d5fd51e9787e3babf214d4ab4",
+                "reference": "cf514db5c2cc490d5fd51e9787e3babf214d4ab4",
+                "shasum": ""
+            },
+            "require": {
+                "dnadesign/silverstripe-elemental": "^4",
+                "jinjie/slickhero": "^1"
+            },
+            "type": "silverstripe-vendormodule",
+            "autoload": {
+                "psr-4": {
+                    "SwiftDevLabs\\SlickHeroElemental\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kong Jin Jie",
+                    "email": "jinjie@swiftdev.sg"
+                }
+            ],
+            "description": "Silverstripe elemental for jinjie/slickhero",
+            "keywords": [
+                "elemental",
+                "hero",
+                "silverstripe",
+                "slickjs"
+            ],
+            "time": "2020-04-30T07:14:30+00:00"
         },
         {
             "name": "league/csv",
