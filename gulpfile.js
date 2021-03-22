@@ -60,4 +60,11 @@ gulp.task('watch', function(cb) {
     cb();
 });
 
-gulp.task('default', gulp.series('sass', 'browserify'));
+gulp.task('fontawesome', function(cb) {
+    gulp.src('node_modules/@fortawesome/fontawesome-free/webfonts/**/*')
+        .pipe(gulp.dest(THEME_DIR + '/client/dist/fontawesome-free/webfonts'));
+
+      cb();
+});
+
+gulp.task('default', gulp.series('sass', 'fontawesome', 'browserify'));

@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "SilverStripe 4 Gulp Workflow",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
     "bootstrap": "^4",
     "browser-sync": "^2.26.7",
     "gulp": "^4",
