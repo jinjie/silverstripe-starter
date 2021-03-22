@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "SilverStripe 4 Gulp Workflow",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
     "bootstrap": "^4",
     "browser-sync": "^2.26.7",
     "gulp": "^4",
@@ -10,6 +11,7 @@
     "gulp-sass": "^4",
     "gulp-sourcemaps": "^2.6",
     "jquery": "3.4.1",
+    "node-notifier": "^9.0.1",
     "popper.js": "^1.16"
   }
 }

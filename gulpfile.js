@@ -15,21 +15,29 @@ var
 
     browserify  = require('gulp-browserify'),
 
-    browserSync = require('browser-sync').create();
+    browserSync = require('browser-sync').create(),
+
+    notifier    = require('node-notifier')
 ;
 
 gulp.task('sass', function(cb) {
     gulp.src(THEME_DIR + '/client/src/sass/*.scss')
         .pipe(sourcemaps.init())
-        .pipe(sass({
-            outputStyle: 'compressed',
-            includePaths: [
-                // to import other sass something like
-                // @import "bootstrap/scss/bootstrap.scss";
-                './node_modules'
-            ]
-        })
-        .on('error', sass.logError))
+        .pipe(
+            sass({
+                outputStyle: 'compressed',
+                includePaths: [
+                    // to import other sass something like
+                    // @import "bootstrap/scss/bootstrap.scss";
+                    './node_modules'
+                ]
+            }).on('error', function(err) {
+                notifier.notify({
+                    'title': 'SASS Compile Error',
+                    'message': err.message
+                })
+            })
+         )
         .pipe(gulp.dest(THEME_DIR + '/client/dist/css'))
         .pipe(browserSync.stream());
 
@@ -38,14 +46,21 @@ gulp.task('sass', function(cb) {
 
 gulp.task('browserify', function(cb) {
     gulp.src(THEME_DIR + '/client/src/js/*.js')
-        .pipe(browserify())
+        .pipe(
+            browserify().on('error', function(err) {
+                notifier.notify({
+                    'title': 'JS Compile Error',
+                    'message': err.message
+                })
+            })
+        )
         .pipe(gulp.dest(THEME_DIR + '/client/dist/js'))
         .pipe(browserSync.stream());
 
     cb();
 });
 
-gulp.task('watch', function(cb) {
+gulp.task('browser-sync', function(cb) {
     browserSync.init({
         proxy: PROXY_URL,
         files: [
@@ -60,4 +75,12 @@ gulp.task('watch', function(cb) {
     cb();
 });
 
-gulp.task('default', gulp.series('sass', 'browserify'));
+gulp.task('fontawesome', function(cb) {
+    gulp.src('node_modules/@fortawesome/fontawesome-free/webfonts/**/*')
+        .pipe(gulp.dest(THEME_DIR + '/client/dist/fontawesome-free/webfonts'));
+
+      cb();
+});
+
+gulp.task('default', gulp.series('sass', 'fontawesome', 'browserify'));
+gulp.task('watch', gulp.series('default', 'browser-sync'));

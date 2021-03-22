@@ -9,4 +9,10 @@
 @import "includes/tablet";
 @import "includes/mobile";
 
+// Fontawesome
+@import "@fortawesome/fontawesome-free/scss/fontawesome";
+@import "@fortawesome/fontawesome-free/scss/solid";
+@import "@fortawesome/fontawesome-free/scss/regular";
+@import "@fortawesome/fontawesome-free/scss/brands";
+
 @import "includes/login-form-fix";

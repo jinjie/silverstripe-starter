@@ -10,7 +10,9 @@
         "fractas/googleanalytics": "^3.0",
         "symbiote/silverstripe-gridfieldextensions": "^3.2",
         "silverstripe/login-forms": "^4.2",
-        "jinjie/silverstripe-admin-material-icons": "^0.0.1"
+        "jinjie/silverstripe-admin-material-icons": "^0.0.1",
+        "dnadesign/silverstripe-elemental": "^4",
+        "jinjie/slickhero-elemental": "^1.0"
     },
     "require-dev": {
         "phpunit/phpunit": "^5.7"
