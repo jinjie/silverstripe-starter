@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="{$ContentLocale}">
 <head>
     <% base_tag %>
     {$MetaTags(false)}

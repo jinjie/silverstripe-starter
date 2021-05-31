@@ -15,7 +15,3 @@ endif
 	rm -rf silverstripe-cache/
 	mkdir silverstripe-cache/
 	vendor/bin/sake dev/build
-
-# Sync assets from development host to staging
-# staging_rsync:
-#     rsync -avzh public/assets user@mystagingserver:path/to/public
