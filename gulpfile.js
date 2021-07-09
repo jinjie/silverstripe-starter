@@ -10,7 +10,7 @@ var
 
     gulp        = require('gulp'),
 
-    sass        = require('gulp-sass'),
+    sass        = require('gulp-sass')(require("sass")),
     sourcemaps  = require('gulp-sourcemaps'),
 
     browserify  = require('gulp-browserify'),
@@ -35,7 +35,9 @@ gulp.task('sass', function(cb) {
                 notifier.notify({
                     'title': 'SASS Compile Error',
                     'message': err.message
-                })
+                });
+
+                console.log(err.message);
             })
          )
         .pipe(gulp.dest(THEME_DIR + '/client/dist/css'))
@@ -51,7 +53,9 @@ gulp.task('browserify', function(cb) {
                 notifier.notify({
                     'title': 'JS Compile Error',
                     'message': err.message
-                })
+                });
+
+                console.log(err.message);
             })
         )
         .pipe(gulp.dest(THEME_DIR + '/client/dist/js'))
