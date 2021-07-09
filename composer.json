@@ -4,8 +4,8 @@
     "description": "Silverstripe Starter Pack",
     "require": {
         "php": ">=7.1.0",
-        "silverstripe/recipe-plugin": "^1.2",
-        "silverstripe/recipe-cms": "^4.7",
+        "silverstripe/recipe-plugin": "^1.5",
+        "silverstripe/recipe-cms": "^4.8",
         "jinjie/silverstripe-bootstrap-forms": "^1.0",
         "fractas/googleanalytics": "^3.0",
         "symbiote/silverstripe-gridfieldextensions": "^3.2",
