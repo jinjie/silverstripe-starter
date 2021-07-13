@@ -6,6 +6,7 @@
     "@fortawesome/fontawesome-free": "^5.15.3",
     "bootstrap": "^4",
     "browser-sync": "^2.26",
+    "browserify": "^17.0.0",
     "gulp": "^4",
     "gulp-sass": "^5",
     "gulp-sourcemaps": "^3",
