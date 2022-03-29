@@ -527,16 +527,16 @@
         },
         {
             "name": "guzzlehttp/psr7",
-            "version": "1.8.2",
+            "version": "1.8.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "dc960a912984efb74d0a90222870c72c87f10c91"
+                "reference": "337e3ad8e5716c15f9657bd214d16cc5e69df268"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/dc960a912984efb74d0a90222870c72c87f10c91",
-                "reference": "dc960a912984efb74d0a90222870c72c87f10c91",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/337e3ad8e5716c15f9657bd214d16cc5e69df268",
+                "reference": "337e3ad8e5716c15f9657bd214d16cc5e69df268",
                 "shasum": ""
             },
             "require": {
@@ -561,12 +561,12 @@
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "GuzzleHttp\\Psr7\\": "src/"
-                },
                 "files": [
                     "src/functions_include.php"
-                ]
+                ],
+                "psr-4": {
+                    "GuzzleHttp\\Psr7\\": "src/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -574,12 +574,33 @@
             ],
             "authors": [
                 {
+                    "name": "Graham Campbell",
+                    "email": "hello@gjcampbell.co.uk",
+                    "homepage": "https://github.com/GrahamCampbell"
+                },
+                {
                     "name": "Michael Dowling",
                     "email": "mtdowling@gmail.com",
                     "homepage": "https://github.com/mtdowling"
                 },
                 {
+                    "name": "George Mponos",
+                    "email": "gmponos@gmail.com",
+                    "homepage": "https://github.com/gmponos"
+                },
+                {
+                    "name": "Tobias Nyholm",
+                    "email": "tobias.nyholm@gmail.com",
+                    "homepage": "https://github.com/Nyholm"
+                },
+                {
+                    "name": "Márk Sági-Kazár",
+                    "email": "mark.sagikazar@gmail.com",
+                    "homepage": "https://github.com/sagikazarmark"
+                },
+                {
                     "name": "Tobias Schultze",
+                    "email": "webmaster@tubo-world.de",
                     "homepage": "https://github.com/Tobion"
                 }
             ],
@@ -594,7 +615,21 @@
                 "uri",
                 "url"
             ],
-            "time": "2021-04-26T09:17:50+00:00"
+            "funding": [
+                {
+                    "url": "https://github.com/GrahamCampbell",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/Nyholm",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/guzzlehttp/psr7",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2022-03-20T21:51:18+00:00"
         },
         {
             "name": "intervention/image",
@@ -866,12 +901,12 @@
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "League\\Csv\\": "src"
-                },
                 "files": [
                     "src/functions_include.php"
-                ]
+                ],
+                "psr-4": {
+                    "League\\Csv\\": "src"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -2042,30 +2077,30 @@
                 ]
             },
             "autoload": {
-                "psr-4": {
-                    "SilverStripe\\Control\\": "src/Control/",
-                    "SilverStripe\\Control\\Tests\\": "tests/php/Control/",
-                    "SilverStripe\\Core\\": "src/Core/",
-                    "SilverStripe\\Core\\Tests\\": "tests/php/Core/",
-                    "SilverStripe\\Dev\\": "src/Dev/",
-                    "SilverStripe\\Dev\\Tests\\": "tests/php/Dev/",
-                    "SilverStripe\\Forms\\": "src/Forms/",
-                    "SilverStripe\\Forms\\Tests\\": "tests/php/Forms/",
-                    "SilverStripe\\i18n\\": "src/i18n/",
-                    "SilverStripe\\i18n\\Tests\\": "tests/php/i18n/",
-                    "SilverStripe\\Logging\\": "src/Logging/",
-                    "SilverStripe\\Logging\\Tests\\": "tests/php/Logging/",
-                    "SilverStripe\\ORM\\": "src/ORM/",
-                    "SilverStripe\\ORM\\Tests\\": "tests/php/ORM/",
-                    "SilverStripe\\Security\\": "src/Security/",
-                    "SilverStripe\\Security\\Tests\\": "tests/php/Security/",
-                    "SilverStripe\\View\\": "src/View/",
-                    "SilverStripe\\View\\Tests\\": "tests/php/View/",
-                    "SilverStripe\\Framework\\Tests\\Behaviour\\": "tests/behat/src/"
-                },
                 "files": [
                     "src/includes/constants.php"
-                ]
+                ],
+                "psr-4": {
+                    "SilverStripe\\Dev\\": "src/Dev/",
+                    "SilverStripe\\ORM\\": "src/ORM/",
+                    "SilverStripe\\Core\\": "src/Core/",
+                    "SilverStripe\\View\\": "src/View/",
+                    "SilverStripe\\i18n\\": "src/i18n/",
+                    "SilverStripe\\Forms\\": "src/Forms/",
+                    "SilverStripe\\Control\\": "src/Control/",
+                    "SilverStripe\\Logging\\": "src/Logging/",
+                    "SilverStripe\\Security\\": "src/Security/",
+                    "SilverStripe\\Dev\\Tests\\": "tests/php/Dev/",
+                    "SilverStripe\\ORM\\Tests\\": "tests/php/ORM/",
+                    "SilverStripe\\Core\\Tests\\": "tests/php/Core/",
+                    "SilverStripe\\View\\Tests\\": "tests/php/View/",
+                    "SilverStripe\\i18n\\Tests\\": "tests/php/i18n/",
+                    "SilverStripe\\Forms\\Tests\\": "tests/php/Forms/",
+                    "SilverStripe\\Control\\Tests\\": "tests/php/Control/",
+                    "SilverStripe\\Logging\\Tests\\": "tests/php/Logging/",
+                    "SilverStripe\\Security\\Tests\\": "tests/php/Security/",
+                    "SilverStripe\\Framework\\Tests\\Behaviour\\": "tests/behat/src/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "include-path": [
@@ -2883,6 +2918,7 @@
                 "mail",
                 "mailer"
             ],
+            "abandoned": "symfony/mailer",
             "time": "2018-07-31T09:26:32+00:00"
         },
         {
@@ -3339,12 +3375,12 @@
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "Symfony\\Polyfill\\Ctype\\": ""
-                },
                 "files": [
                     "bootstrap.php"
-                ]
+                ],
+                "psr-4": {
+                    "Symfony\\Polyfill\\Ctype\\": ""
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -3415,12 +3451,12 @@
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "Symfony\\Polyfill\\Mbstring\\": ""
-                },
                 "files": [
                     "bootstrap.php"
-                ]
+                ],
+                "psr-4": {
+                    "Symfony\\Polyfill\\Mbstring\\": ""
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -3489,12 +3525,12 @@
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "Symfony\\Polyfill\\Php80\\": ""
-                },
                 "files": [
                     "bootstrap.php"
                 ],
+                "psr-4": {
+                    "Symfony\\Polyfill\\Php80\\": ""
+                },
                 "classmap": [
                     "Resources/stubs"
                 ]
@@ -3569,12 +3605,12 @@
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "Symfony\\Polyfill\\Php81\\": ""
-                },
                 "files": [
                     "bootstrap.php"
                 ],
+                "psr-4": {
+                    "Symfony\\Polyfill\\Php81\\": ""
+                },
                 "classmap": [
                     "Resources/stubs"
                 ]
@@ -4130,12 +4166,12 @@
             },
             "type": "library",
             "autoload": {
-                "psr-4": {
-                    "DeepCopy\\": "src/DeepCopy/"
-                },
                 "files": [
                     "src/DeepCopy/deep_copy.php"
-                ]
+                ],
+                "psr-4": {
+                    "DeepCopy\\": "src/DeepCopy/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
