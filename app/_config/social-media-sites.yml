@@ -6,6 +6,7 @@ SwiftDevLabs\Models\SocialMediaLink:
   social_media_sites:
     "fa-twitter": "Twitter"
     "fa-facebook": "Facebook"
+    "fa-instagram": "Instagram"
     "fa-whatsapp": "WhatsApp"
     "fa-youtube": "YouTube"
     "fa-linkedin-in": "LinkedIn"
