@@ -14,4 +14,4 @@ endif
 	./node_modules/gulp/bin/gulp.js
 	rm -rf silverstripe-cache/
 	mkdir silverstripe-cache/
-	vendor/bin/sake dev/build
+	php vendor/silverstripe/framework/cli-script.php dev/build
