@@ -8,4 +8,5 @@
 /themes/silverstripe-bootstrap-forms
 /node_modules
 composer-stable.phar
+composer.phar
 /.graphql-generated/

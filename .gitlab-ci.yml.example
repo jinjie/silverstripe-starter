@@ -49,5 +49,10 @@ deploy_staging:
 
     - ssh-keyscan $HOST_STAGING >> ~/.ssh/known_hosts
     - chmod 644 ~/.ssh/known_hosts
-  script:
-    - ssh $USER_HOST_STAGING "cd $WORKING_DIR_STAGING && make staging"
+  script: |
+    ssh $USER_HOST_STAGING "
+      cd $WORKING_DIR_STAGING
+      git fetch
+      git checkout $CI_COMMIT_SHORT_SHA
+      make staging
+    "
